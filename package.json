@@ -1,0 +1,35 @@
+{
+  "name": "to-absolute-path",
+  "version": "1.0.0",
+  "description": "Transform any path to an absolute path depending on your call stack",
+  "license": "MIT",
+  "repository": "mastilver/to-absolute-path",
+  "author": {
+    "name": "Thomas Sileghem",
+    "email": "tsileghem@neworbit.co.uk",
+    "url": "github.com/mastilver"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "caller": "^1.0.0",
+    "isarray": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.2",
+    "coveralls": "^2.11.2",
+    "nyc": "^2.3.0"
+  }
+}
